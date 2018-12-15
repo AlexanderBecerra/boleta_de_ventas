@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" /> 
+    <title>Inicio</title> 
+    <link rel="stylesheet"  href="sanitize.css" /> 
+    <link rel="stylesheet"  href="estilos.css" />  
+
+</head>
+<body>
+
+    <div class="cuerpo">
+ 
+        <div class="cabeza clearfix">
+
+            <img class="logotipo" src="Logo_AVLA.jpg" >
+        
+        </div>
+
+        <div class="resaltar">
+
+            <h1 class="encabezado" >Solicitud de emisión - seguro de caucion <br> Obras, servicios y suministros</h1>
+        
+        </div>
+
+        <div class="contenedor">
+               
+               <form onsubmit="return false">
+
+                   <label class="titulo" >Datos del Tomador</label> 
+                   <div class="bloque">
+                        <p >Nombre o Denominación / Razón Social (sin abreviar): </p>
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" class="effect-1" id="tomador_nombre" required>
+                            <span class="focus-border"></span>               
+                        </div>
+
+                        <br>
+
+                        <p >RUC N°: </p>
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" class="effect-1" id="tomador_ruc" required>
+                            <span class="focus-border"></span> 
+                        </div>
+                        
+                        <br>
+
+
+                        <p >DNI/CE N°: </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1"  id="tomador_dni_ce" required>
+                            <span class="focus-border"></span> 
+                        </div>
+                        
+                        <br>
+                   </div>
+                   
+                   <label class="titulo"> Datos del asegurado</label>
+                   <br>
+
+                   <div class="bloque0">
+                        <p>Nombre de Entidad Licitante o Contratante: </p>
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" class="effect-1" id="asegurado_nombre_licitante" required>
+                            <span class="focus-border"></span> 
+                        </div>
+
+                        
+                        <br>
+                        <p>RUC N°: </p>
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" class="effect-1" id="asegurado_ruc" required>
+                            <span class="focus-border"></span>
+                        </div>
+
+                        
+                        <br>
+                        <p>Dirección Completa: </p>
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" class="effect-1" id="asegurado_direccion" required>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <br>
+                        <p>Nombre de funcionario de contacto: </p>
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" id="asegurado_nombre_funcionario" class="effect-1" >
+                            <span class="focus-border"></span>
+                        </div>
+
+                        
+                        <br>
+                        <p>Telefono(s): </p>
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" id="asegurado_telefono" class="effect-1" >
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <br>
+                        <p>e-mail: </p>
+                        <br>
+                        
+                        <div class="col-3">
+                            <input type="email" id="asegurado_email" class="effect-1" >
+                            <span class="focus-border"></span>
+                        </div>
+                        
+
+                        <br>
+                   </div>
+
+                   
+                   <label class="titulo">Datos de la obra, servicio o suministro</label>
+                   <br>
+
+                   <div class="bloque1">
+                        <p >Denominación del proceso o contrato: </p> 
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1" id="obra_denominacion">
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <br>
+                        <p >Descripción del Objeto: </p> 
+                        <br>
+
+                        <textarea class="cuadro" id="obra_descripcion" rows="10" cols="40" placeholder="Descripcion"> </textarea>
+                        <br>
+
+                        <p >Sistema de contratación: </p> 
+                        <br>
+
+                        <div class="col-3"> 
+                                <input type="text" id="obra_contratacion" class="effect-1">
+                                <span class="focus-border"></span>
+                        </div>
+
+                        <br>
+                        <p >Valor Referencial: </p> 
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" id="obra_valor_ref" class="effect-1">
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <br>
+                        <p >Valor Adjudicado: </p> 
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" id="obra_valor_adj" class="effect-1">
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <br>
+                        <p >Lugar de ejecución: </p> 
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" id="obra_lugar" class="effect-1">
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <br>
+                        <p >Plazo de ejecución: </p> 
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" id="obra_plazo" class="effect-1">
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <br>
+                   </div>
+                   
+                   <label class="titulo">Maquinaria, Equipo, Herramientas </label>
+                   <br>
+
+                   <div class="bloque2 clearfix">
+                        <p class="p_radio"> ¿La maquinaria, equipo o herramienta destinada a la obra, servicio o suministro es? </p>
+                         
+                        <div class="rad">
+                            <input type="radio"   name="servicio" id="propia" value="propio">PROPIA &nbsp
+                            <input type="radio"   name="servicio" id="alquilada" value="alquilado">ALQUILADA <br>
+                        </div>
+                        
+                   </div>
+                   
+                   <table class="tablaMaestra" id="tablaMaestra">
+                        <thead>
+                            <tr>
+                                <th>Tipo de póliza <br>Marcar la opción(es)</th>
+                                <th>Moneda (Especificar)</th>
+                                <th>Suma Asegurada</th>
+                                <th>Plazo de vigencia <br>de la fianza</th>
+                                <th>Vigencia (desde )</th>
+                                <th>Vigencia (hasta)</th> 
+                            </tr>
+                        </thead>
+                        <tbody id="TableID" >
+                            <tr >
+        
+                                <td class="tipo_id[]" >
+                                    <input type="checkbox" name="poliza" value="seriedad" class="chk" id="chk" >Seriedad de oferta
+                                </td>
+                                <td class="tipo_id[]">
+                                    <div class="cambio_dinero ">
+                                         <select name="cobertura_moneda" id="cobertura_moneda" class="cobertura_moneda">
+                                                <option value="S/" >S/</option>
+                                                <option value="$">$</option>
+                                                <option value="£">£</option>
+                                         </select>
+                                    </div>
+                                    
+                                </td>
+        
+                                <td class="tipo_id[]"> 
+                                    <input type="text" name="cobertura_suma" id="cobertura_suma"  style="width:100px" class="cobertura">
+                                </td>
+        
+                                <td class="tipo_id[]">
+                                    <input type="text" name="cobertura_fianza" id="cobertura_fianza"  style="width:100px"  class="cobertura">
+                                </td>
+        
+                                <td class="tipo_id[]">
+                                    <input type="date" name="cobertura_vigencia_ini" id="cobertura_vigencia_ini">
+                                </td>
+                                <td class="tipo_id[]">
+                                    <input type="date" name="cobertura_vigencia_fin" id="cobertura_vigencia_fin">
+                                </td>
+                
+                            </tr>
+                
+                            <tr>
+                                <td class="tipo_id[]"><input type="checkbox" class="chk" name="poliza" value="fiel" >Fiel Cumplimiento</td>
+                                <td class="tipo_id[]">
+                                        <select name="" id="cobertura_moneda" class="cobertura_moneda">
+                                                <option value="S/" >S/</option>
+                                                <option value="$">$</option>
+                                                <option value="£">£</option>
+                                        </select>
+                                    </td>
+                                    <td class="tipo_id[]">
+                                        <input type="text" name="cobertura_suma" id="cobertura_suma"  style="width:100px" class="cobertura">
+                                    </td>
+                                    <td class="tipo_id[]">
+                                        <input type="text" name="cobertura_fianza" id="cobertura_fianza"  style="width:100px" class="cobertura">
+                                    </td>
+                                    <td class="tipo_id[]">
+                                        <input type="date" name="cobertura_vigencia_ini" id="cobertura_vigencia_ini">
+                                        </td>
+                                    <td class="tipo_id[]">
+                                        <input type="date" name="cobertura_vigencia_fin" id="cobertura_vigencia_fin">
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td class="tipo_id[]"><input type="checkbox" class="chk" name="poliza" value="directo" >Adelanto Directo</td>
+                                <td class="tipo_id[]">
+                                        <select name="" id="cobertura_moneda" class="cobertura_moneda">
+                                                <option value="S/" >S/</option>
+                                                <option value="$">$</option>
+                                                <option value="£">£</option>
+                                        </select>
+                                    </td>
+                                    <td class="tipo_id[]">
+                                        <input type="text" name="cobertura_suma" id="cobertura_suma" style="width:100px" class="cobertura">
+                                    </td>
+                                    <td class="tipo_id[]">
+                                        <input type="text" name="cobertura_fianza" id="cobertura_fianza" style="width:100px" class="cobertura">
+                                    </td>
+                                    <td class="tipo_id[]">
+                                            <input type="date" name="cobertura_vigencia_ini" id="cobertura_vigencia_ini">
+                                        </td>
+                                        <td class="tipo_id[]">
+                                                <input type="date" name="cobertura_vigencia_fin" id="cobertura_vigencia_fin">
+                                        </td>
+                            </tr>
+                            <tr>
+                                <td class="tipo_id[]"><input type="checkbox" class="chk" name="poliza" value="materiales" >Adelanto para materiales</td>
+                                <td class="tipo_id[]">
+                                        <select name="" id="cobertura_moneda" class="cobertura_moneda">
+                                                <option value="S/" >S/</option>
+                                                <option value="$">$</option>
+                                                <option value="£">£</option>
+                                        </select>
+                                    </td>
+                                    <td class="tipo_id[]">
+                                        <input type="text" name="cobertura_suma" id="cobertura_suma" style="width:100px" class="cobertura">
+                                    </td>
+                                    <td class="tipo_id[]">
+                                        <input type="text" name="cobertura_fianza" id="cobertura_fianza" style="width:100px" class="cobertura">
+                                    </td>
+                                    <td class="tipo_id[]">
+                                            <input type="date" name="cobertura_vigencia_ini" id="cobertura_vigencia_ini">
+                                        </td>
+                                        <td class="tipo_id[]">
+                                                <input type="date" name="cobertura_vigencia_fin" id="cobertura_vigencia_fin">
+                                        </td>
+                            </tr>
+                            <tr>
+                                <td class="tipo_id[]"><input type="checkbox" class="chk" name="poliza" value="otros" >Otros(Especificar) <input type="text" class="opciones_otros" size="4" id="opciones_otros" placeholder="Especifique"></td>
+                                <td class="tipo_id[]">
+                                        <select name="" id="cobertura_moneda" class="cobertura_moneda">
+                                                <option value="S/" >S/</option>
+                                                <option value="$">$</option>
+                                                <option value="£">£</option>
+                                        </select>
+                                    </td>
+                                    <td class="tipo_id[]">
+                                        <input type="text" name="cobertura_suma" id="cobertura_suma" style="width:100px" class="cobertura">
+                                    </td>
+                                    <td class="tipo_id[]">
+                                        <input type="text" name="cobertura_fianza" id="cobertura_fianza" style="width:100px" class="cobertura">
+                                    </td>
+                                    <td class="tipo_id[]">
+                                            <input type="date" name="cobertura_vigencia_ini" id="cobertura_vigencia_ini">
+                                        </td>
+                                        <td class="tipo_id[]">
+                                                <input type="date" name="cobertura_vigencia_fin" id="cobertura_vigencia_fin">
+                                        </td>
+                            </tr>
+                
+                        </tbody>
+                </table>
+
+                    
+                   
+                   <h2> <span>NOTA: </span>En caso de 'Consorcio', especificar a continuación el nombre de la empresa <br>otorgante de la garantía mobiliaria:</h2>
+                   <br> 
+                   <div class="col-3 alertar">
+                        <input type="text" name="" id="alertar_no_consorcio" class="effect-1 ">
+                        <span class="focus-border"></span>
+                   </div>
+                   <p>________________________________________________________________________________________________</p>
+                   <br>
+                   <h3>Nombre o Razón Social del Declarante: </h3>
+                   <br> 
+                   <div class="col-3 alertar">
+                        <input type="text" name="" id="social_decla" class="effect-1 ">
+                        <span class="focus-border"></span>
+                   </div>
+                   <br>
+                   
+                   <label class="titulo" >DECLARACION EN OBRAS, SERVICIOS O SUMINISTROS 'SIMILARE'
+                       <br>(Principales contratos similares ejecutados en los últimos 5 años)
+                   </label> 
+                   <div class="bloque">
+                        <p >Entidad/Beneficiario </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1" id="declaracion5_entidad" name="declaracion5_entidad" required>
+                            <span class="focus-border"></span>               
+                        </div>
+
+                        <br>
+
+                        <p >Objeto de Contrato: </p>
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" class="effect-1" name="declaracion5_objeto" id="declaracion5_objeto" required>
+                            <span class="focus-border"></span> 
+                        </div>
+                        
+                        <br>
+
+
+                        <p >Monto y moneda del contrato: </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1" name="declaracion5_monto" id="declaracion5_monto" required>
+                            <span class="focus-border"></span> 
+                        </div>
+                        
+                        <br>
+                        <p >Plazo Original(en días): </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1" name="declaracion5_plazo"  id="declaracion5_plazo" required>
+                            <span class="focus-border"></span> 
+                        </div>
+
+                        <br>
+                        <p >Fecha Inicio: </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="date" class="effect-1" name="declaracion5_fec_ini" id="declaracion5_fec_ini" required>
+                            <span class="focus-border"></span> 
+                        </div>
+
+                        <br>
+                        <p >Fecha Fin: </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="date" class="effect-1"  id="declaracion5_fec_fin" name="declaracion5_fec_fin" required>
+                            <span class="focus-border"></span> 
+                        </div>
+
+                        <br>
+
+                        <p >Fecha de Recepción Final: </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="date" class="effect-1"  id="declaracion5_fec_re" name="declaracion5_fec_re" required>
+                            <span class="focus-border"></span> 
+                        </div>
+
+                        <br> 
+
+                        <p >Liquidacion Final: Indicar si <br>
+                        fue a favor o en contra y monto </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1"  id="declaracion5_fa_co" name="declaracion5_fa_co">
+                            <span class="focus-border"></span> 
+                        </div>
+                        <div >
+                            <button class="btn_muestra boton_5">Agregar</button>
+                        </div>
+
+
+
+                         
+                   </div>
+                   <br>
+
+                   <label class="titulo" >DECLARACION DE EXPERINCIA EN OBRAS, SERVICIOS o SUMINISTROS 'GENERALES' <br>
+                    (Principales contratos similiares ejecutados en los ultimos 18 meses)
+                </label> 
+                   <div class="bloque">
+                        <p >Entidad/Beneficiario </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1" name="declaracion18_entidad" id="declaracion18_entidad" required>
+                            <span class="focus-border"></span>               
+                        </div>
+
+                        <br>
+
+                        <p >Objeto de Contrato: </p>
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" class="effect-1" id="declaracion18_objeto" name="declaracion18_objeto" required>
+                            <span class="focus-border"></span> 
+                        </div>
+                        
+                        <br>
+
+
+                        <p >Monto y moneda del contrato: </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1"  id="declaracion18_monto" name="declaracion18_monto" required>
+                            <span class="focus-border"></span> 
+                        </div>
+                        
+                        <br>
+                        <p >Plazo Original(en días): </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1"  id="declaracion18_plazo" name="declaracion18_plazo"  required>
+                            <span class="focus-border"></span> 
+                        </div>
+
+                        <br>
+                        <p >Fecha Inicio: </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="date" class="effect-1" name="declaracion18_fec_ini"  id="declaracion18_fec_ini" required>
+                            <span class="focus-border"></span> 
+                        </div>
+
+                        <br>
+                        <p >Fecha Fin: </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="date" class="effect-1"  id="declaracion18_fec_fin"  name="declaracion18_fec_fin" required>
+                            <span class="focus-border"></span> 
+                        </div>
+
+                        <br>
+                        <p >Fecha de Recepción Final: </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="date" class="effect-1" name="declaracion18_fec_re"  id="declaracion18_fec_re" required>
+                            <span class="focus-border"></span> 
+                        </div>
+
+                        <br>
+
+                        <p >Liquidacion Final: Indicar si <br>
+                        fue a favor o en contra y monto </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1"  id="declaracion18_fa_co"  name="declaracion18_fa_co">
+                            <span class="focus-border"></span> 
+                        </div>
+                        <div >
+                            <button class="btn_muestra boton_18">Agregar</button>
+                        </div>
+                         
+                   </div>
+                   <br>
+
+                   <label class="titulo" >DECLARACION DE OBRAS, SERVICIOS o SUMINISTROS 'EJECUCIÓN O VIGENTES A LA FECHA' <br>                </label> 
+                   <div class="bloque">
+                        <p >Entidad/Beneficiario </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1" id="declaracion_eje_entidad"name="declaracion_eje_entidad" required>
+                            <span class="focus-border"></span>               
+                        </div>
+
+                        <br>
+
+                        <p >Objeto de Contrato: </p>
+                        <br>
+
+                        <div class="col-3">
+                            <input type="text" class="effect-1" id="declaracion_eje_objeto" name="declaracion_eje_objeto"required>
+                            <span class="focus-border"></span> 
+                        </div>
+                        
+                        <br>
+
+
+                        <p >Monto y moneda del contrato: </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1"  id="declaracion_eje_monto" name="declaracion_eje_monto" required>
+                            <span class="focus-border"></span> 
+                        </div>
+                        
+                        <br>
+                        <p >Plazo Original(en días): </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1" name="declaracion_eje_plazo"  id="declaracion_eje_plazo" required>
+                            <span class="focus-border"></span> 
+                        </div>
+
+                        <br>
+                        <p >Fecha Inicio: </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="date" class="effect-1"  id="declaracion_eje_fec_ini"  name="declaracion_eje_fec_ini"required>
+                            <span class="focus-border"></span> 
+                        </div>
+
+                        <br>
+                        <p >Fecha Fin: </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="date" class="effect-1"   name="declaracion_eje_fec_fin" id="declaracion_eje_fec_fin" required>
+                            <span class="focus-border"></span> 
+                        </div>
+
+                        <br>
+                        <p >Fecha de Recepción Final: </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="date" class="effect-1"  name="declaracion_eje_fec_re" id="declaracion_eje_fec_re" required>
+                            <span class="focus-border"></span> 
+                        </div>
+
+                        <br>
+
+                        <p >Liquidacion Final: Indicar si <br>
+                        fue a favor o en contra y monto </p>
+                        <br>
+                        <div class="col-3">
+                            <input type="text" class="effect-1" name="declaracion_eje_fa_co" id="declaracion_eje_fa_co" >
+                            <span class="focus-border"></span> 
+                        </div>
+                        <div >
+                            <button class="btn_muestra boton_eje">Agregar</button>
+                        </div>
+                         
+                   </div>
+
+                   <br>
+                   <div class="botones">
+                        <input type="submit" id="enviar"  class="boton_enviar" value="Enviar">
+                        <input type="reset" class="boton_resetear" value="resetear">
+                   </div>
+                   
+               </form>
+       
+        </div>
+            
+        <div id="section-to-print"> 
+
+            <table class="impresion">
+                    
+                    <tr class="nuevo" > 
+                        <td class="titulos" >DATOS DEL TOMADOR</td>
+                    </tr>
+                     
+                    <tr class="nuevo" >
+                        <td>Nombre o Denominacion / <br> Razón Social(sin abreviar): </td>
+                        <td class="nombre_deno" ></td>
+                    </tr> 
+                    <tr class="nuevo" >
+                        <td>RUC N°:</td>
+                        <td class="tom_ruc"></td>
+                        
+                    </tr>
+                    <tr class="nuevo">
+                            <td>DNI/CE N°:</td>
+                            <td class="tom_dni"></td>
+                    </tr>
+                    <tr class="nuevo"> 
+                        <td class="titulos">DATOS DEL ASEGURADO</td>
+                    </tr>
+                    <tr class="nuevo">
+                            <td>Nombre de Entidad Licitante o <br> Contratante: </td>
+                            <td class="ase_nombre_licitante" ></td>
+                    </tr>
+                    <tr class="nuevo">
+                            <td>RUC N°:  </td>
+                            <td class="ase_ruc" ></td>
+                    </tr>
+                    <tr class="nuevo">
+                            <td>Direccion Completa: </td>
+                            <td class="ase_direccion" ></td>
+                    </tr>
+                    <tr class="nuevo">
+                            <td>Nombre de funcionario de contacto: </td>
+                            <td class="ase_nombre_funcionario" ></td>
+                    </tr>
+                    <tr class="nuevo">
+                            <td>Teléfono(s):  </td>
+                            <td class="ase_telefono" ></td>
+                    </tr>
+                    <tr class="nuevo">
+                        <td>e-mail: </td>
+                        <td class="ase_email" ></td>
+                    </tr>
+                    <tr class="nuevo">
+                            <td class="titulos">DATOS DE LA OBRA, SERVICIO, O SUMINISTRO</td>
+                    </tr>
+                    <tr class="nuevo">
+                            <td>Denominacion del proceso o contrato: </td>
+                            <td class="obr_denominacion"></td>
+                    </tr>
+                    <tr class="nuevo">
+                            <td>Descripcion del objeto: </td>
+                            <td class="obr_descripcion"></td>
+                    </tr>
+                    <tr class="nuevo">
+                            <td>Sistema de contratacion: </td>
+                            <td class="obr_contratacion"></td>
+                    </tr>
+                    <tr class="nuevo">
+                            <td>Valor referencial: </td>
+                            <td class="obr_valor_ref"></td>
+                            
+                    </tr>
+                    <tr class="nuevo">
+                            <td>Valor adjuticativo: </td>
+                            <td class="obr_valor_adj"></td>
+                    </tr>
+                    <tr class="nuevo">
+                            <td>Lugar de ejecución: </td>
+                            <td class="obr_lugar"></td>                        
+                    </tr>
+                    <tr class="nuevo">
+                            
+                            <td>Plazo de ejecución: </td>
+                            <td class="obr_plazo"></td>
+                            
+                    </tr>
+                    <tr class="nuevo">
+                            <td class=" titulos">MAQUINARIA, EQUIPO, HERRAMIENTAS</td>
+                    </tr>
+                    <tr class="nuevo">
+                            <td>¿La maquinaria, equipo o herramienta destinada a la obra, <br> servicio o suministro es? </td>
+                            <td>Propia o Alquilada <td class="proalq"></td>
+                    </tr>
+                    <tr class="nuevo">
+                            <td class="titulos">DATOS DE COBERTURA</td>
+                    </tr>
+                    <tr class="nuevo">
+                                <td>Tipo de póliza <br>Marcar la opción(es)</td>
+                                <td>Moneda (Especificar)</td>
+                                <td>Suma Asegurada</td>
+                                <td>Plazo de vigencia <br>de la fianza</td>
+                                <td>Vigencia (desde / hasta)</td> 
+                    </tr>
+                    <tr  class="nuevo">
+                            
+                        <td style="padding:5px 0 0 40px"  class="cober_poliza"> </td> 
+                        <td  style="padding:5px 0 0 80px" class="cober_moneda cober_dinero"> </td> 
+                        <td style="padding:5px 0 0 95px"  class="cober_suma"> </td>
+                        <td  style="padding:5px 0 0 70px" class="cober_fianza"> </td>
+                        <td style="padding:5px 0 0 50px" class="cober_vigencia"> </td> 
+                            
+                    </tr>
+    
+                    <tr  class="nuevo">
+                            <td style="padding:5px 0 0 40px" class="cobertura_poliza1"></td>
+                        
+                            <td style="padding:5px 0 0 80px" class="cober_moneda1 cober_dinero1"></td>
+                            
+                            <td style="padding:5px 0 0 95px"  class="cober_suma1"></td>
+                            <td style="padding:5px 0 0 70px" class="cober_fianza1"></td>
+                            <td style="padding:5px 0 0 50px" class="cober_vigencia1"></td>
+                            
+                    </tr>
+    
+                    <tr  class="nuevo">
+                            <td style="padding:5px 0 0 40px" class="cobertura_poliza2"></td>
+                        
+                            <td style="padding:5px 0 0 80px" class="cober_moneda2 cober_dinero2"></td>
+                                
+                            <td style="padding:5px 0 0 95px"  class="cober_suma2"></td>
+                            <td style="padding:5px 0 0 70px" class="cober_fianza2"></td>
+                            <td style="padding:5px 0 0 50px" class="cober_vigencia2"></td>
+                    </tr>
+
+                    <tr  class="nuevo">
+                            <td style="padding:5px 0 0 40px" class="cobertura_poliza3"></td>
+                            
+                            <td style="padding:5px 0 0 80px" class="cober_moneda3 cober_dinero3"></td>
+                            
+                            <td style="padding:5px 0 0 95px"  class="cober_suma3"></td>
+                            <td style="padding:5px 0 0 70px" class="cober_fianza3"></td>
+                            <td style="padding:5px 0 0 50px" class="cober_vigencia3"></td>
+                    </tr>   
+
+                    <tr  class="nuevo">
+                                <td style="padding:5px 0 0 40px" class="cobertura_poliza4"></td>
+                                
+                                <td style="padding:5px 0 0 80px" class="cober_moneda4 cober_dinero4"></td>
+                                
+                                <td style="padding:5px 0 0 95px"  class="cober_suma4"></td>
+                                <td style="padding:5px 0 0 70px" class="cober_fianza4"></td>
+                                <td style="padding:5px 0 0 50px" class="cober_vigencia4"></td>
+                    </tr>
+
+            </table>
+                 
+             
+            <h2 class="notal"> <span>NOTA: </span>En caso de 'Consorcio', especificar a continuación el nombre de la empresa <br>otorgante de la garantía mobiliaria:</h2>
+             
+            <p class="consorcioo" style="text-align:center" ></p>
+             
+            <div class="docus">
+
+                <h2>DOCUMENTOS ADJUNTOS: </h2>
+                <ul>
+                    <li>Memoria descriptiva de la obra o Especificaciones Técnicas del Servicio o suministro</li>
+                    <li>Resumen del Presupuesto Ofertado</li>
+                    <li>Declaracion de Experiencia en Contratos Similares, Contratos Generales <br> y de Contratos en Ejecución o Vigentes a la fecha </li>
+                </ul>
+                <p class="final">(ver pagina 2 de 2).</p>
+
+            </div>
+                
+            <div class="legales">
+
+                <p class="tex_legal final">
+                    AVL PERÚ se obliga ante el TOMADOR a la emision de la póliza solicitada dentro del plazo de quince (15) días calendario de haber presentado <br>
+                    su solicitud (de forma completa, incluida ajuntos) si no media rechazo previo en el plazo indicado, y siempre que se haya cumplido con las <br>
+                    condiciones de instrumentación de contrafarantías y el pago de la prima, según lo informado por la compañia.
+                </p>
+                    
+            </div>
+                
+            <h3 id="fecha_hoy"></h3> 
+                
+                
+            <div class="firmas clearfix">
+                    <div class="firma1">
+                        <p class="final">___________________________________</p>
+                        <p class="final">FIRMA Y SELLO</p>
+                        <p class="final">REPRESENTANTE LEGAL AUTORIZADO 1</p>
+                    </div>
+                    <div class="firma2">
+                        <p class="final">___________________________________</p>
+                        <p class="final">FIRMA Y SELLO</p>
+                        <p class="final">REPRESENTANTE LEGAL AUTORIZADO 2</p>
+                        <P class="final">(Solo en caso de aplique)</P>
+                    </div>
+            </div>
+
+            <div class="piepagina">
+                    <p class="final">Las condiciones de la presente póliza se encuentra sujeta a una revision posterior por parte de la Superintentencia, por lo que, en caso se <br>
+                    identifiquen clausulas abusivas en el marco de la Ley del Contrato de se Seguro y normas reglamentarias, y estas no sean subsanadas por la <br>
+                    empresa, la Superintentencia podrá revocar el código de registro asignado lo que determinará la prohibición de su comercialización.
+                    </p>
+                     
+            </div>
+            <div class="caja_soc">
+                    <h3 style="text-align:center">Nombre o Razón Social del Declarante:</h3>
+
+                    <p class="soc_decla" style="color:black;"></p>
+
+                     <table class="tfinal5">
+                        <thead>
+                            <tr>
+                                <th>Entidad/Beneficiario</th>
+                                <th>Objeto del Contrato</th>
+                                <th>Monto y moneda del Contrato</th>
+                                <th>Plazo Original <br>(en dias) </th>
+                                <th>Fecha Inicio</th>
+                                <th>Fecha Final</th>
+                                <th>Fecha de Recepción Final</th>
+                                <th>Liquidacion Final: Indicar si <br>
+                                    fue a favor o en contra y monto </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            
+                        </tbody>
+                     </table>
+
+                     <br>
+                      
+                        <table class="tfinal18">
+                                <thead>
+                                    <tr>
+                                        <th>Entidad/Beneficiario</th>
+                                        <th>Objeto del Contrato</th>
+                                        <th>Monto y moneda del Contrato</th>
+                                        <th>Plazo Original <br>(en dias) </th>
+                                        <th>Fecha Inicio</th>
+                                        <th>Fecha Final</th>
+                                        <th>Fecha de Recepción Final</th>
+                                        <th>Liquidacion Final: Indicar si <br>
+                                            fue a favor o en contra y monto </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+        
+                                   
+                                </tbody>
+                        </table>
+
+                        <table class="tfinal_eje">
+                                <thead>
+                                    <tr>
+                                        <th>Entidad/Beneficiario</th>
+                                        <th>Objeto del Contrato</th>
+                                        <th>Monto y moneda del Contrato</th>
+                                        <th>Plazo Original <br>(en dias) </th>
+                                        <th>Fecha Inicio</th>
+                                        <th>Fecha Final</th>
+                                        <th>Fecha de Recepción Final</th>
+                                        <th>Liquidacion Final: Indicar si <br>
+                                            fue a favor o en contra y monto </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+        
+                                </tbody>
+                        </table>
+            </div>
+            
+  
+            <h3 class="fecha_hoy"></h3>
+            <div class="firmas clearfix">
+
+                <div class="firma1">
+                        <p class="final">___________________________________</p>
+                        <p class="final">FIRMA Y SELLO</p>
+                        <p class="final">REPRESENTANTE LEGAL AUTORIZADO 1</p>
+                </div>
+                <div class="firma2">
+                        <p class="final">___________________________________</p>
+                        <p class="final">FIRMA Y SELLO</p>
+                        <p class="final">REPRESENTANTE LEGAL AUTORIZADO 2</p>
+                        <P class="final">(Solo en caso de aplique)</P>
+                </div>
+
+            </div>
+
+            <div class="piepagina">
+                    <p class="final"> NOTA: Si el espacio de la presente Declaración resultase insuficientem, sírvase adjuntar hojas adicionales, cada una de las cuales deberá ser rubricad. <br>
+                        Los abajo suscritos garantizamos que los datos proporcionados son exactos, a los cuales asignamos carácter de declaración jurada en los terminos consignados en el artículo 179 de la <br>
+                        ley general del sistema financiero y del sistema de seguros - LEY 26702. Y declaramos que somos conocedores del delito de fraude en la administracion de personas jurídicas (Incisos 1 y 2
+                        <br>del artículo 198 del codigo penal)  y de sus efectos legales.
+                    </p>
+            </div>   
+
+        </div>
+    </div>
+    <input type="button" value="Imprimir" class="boton_imprimir" id="print">
+ 
+    <footer class="site-footer" id="site-footer">
+        <p class="derechos">Derechos reservados &#169;AVLA  </p>
+    </footer> 
+  
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
