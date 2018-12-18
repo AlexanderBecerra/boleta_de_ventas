@@ -166,127 +166,125 @@
     
             
              
-        console.log(values[0].eleccion); 
-        console.log(values[0].especificacion); 
-        console.log(values[0].suma); 
-        console.log(values[0].plazo); 
-        console.log(values[0].vigencia_ini); 
-        console.log(values[0].vigencia_fin); 
-    
-        var pol  = document.querySelector('.cober_poliza'); 
-        var mensaje6_ = document.createTextNode( values[0].eleccion);
+  
+            var pol  = document.querySelector('.cober_poliza'); 
+            var mensaje6_ = document.createTextNode( values[0].eleccion);
+            
+            pol.appendChild(mensaje6_);
         
-        pol.appendChild(mensaje6_);
-    
-        var moneda  = document.querySelector('.cober_moneda'); 
-        var mensaje7_ = document.createTextNode( values[0].especificacion);
+            var moneda  = document.querySelector('.cober_moneda'); 
+            var mensaje7_ = document.createTextNode( values[0].especificacion);
+            
+            moneda.appendChild(mensaje7_);
         
-        moneda.appendChild(mensaje7_);
-    
-        var sumar  = document.querySelector('.cober_suma'); 
-        var mensaje8_ = document.createTextNode( values[0].suma);
+            var sumar  = document.querySelector('.cober_suma'); 
+            var mensaje8_ = document.createTextNode( values[0].suma);
+            
+            sumar.appendChild(mensaje8_);
         
-        sumar.appendChild(mensaje8_);
-    
-        var plaz  = document.querySelector('.cober_fianza'); 
-        var mensaje9_ = document.createTextNode( values[0].plazo);
+            var plaz  = document.querySelector('.cober_fianza'); 
+            var mensaje9_ = document.createTextNode( values[0].plazo);
+            
+            plaz.appendChild(mensaje9_);
         
-        plaz.appendChild(mensaje9_);
-     
-    
-        var ende  = document.querySelector('.cober_vigencia'); 
-        var mensaje11_ = document.createTextNode( values[0].vigencia_ini +" "+ values[0].vigencia_ini);
         
-        ende.appendChild(mensaje11_);
+            var ende  = document.querySelector('.cober_vigencia'); 
+            var mensaje11_ = document.createTextNode( values[0].vigencia_ini +"-"+ values[0].vigencia_ini);
+            
+            ende.appendChild(mensaje11_);
         
-    
-    
-    
-        var pol1  = document.querySelector('.cobertura_poliza1'); 
-        var mensaje61_ = document.createTextNode( values[1].eleccion);
         
-        pol1.appendChild(mensaje61_);
-    
-        var moneda1 = document.querySelector('.cober_moneda1'); 
-        var mensaje71_ = document.createTextNode( values[1].especificacion);
+            var pol1  = document.querySelector('.cobertura_poliza1'); 
+            var mensaje61_ = document.createTextNode( values[1].eleccion);
+            
+            pol1.appendChild(mensaje61_);
+
+            var moneda1 = document.querySelector('.cober_moneda1'); 
+            var mensaje71_ = document.createTextNode( values[1].especificacion);
+            
+            moneda1.appendChild(mensaje71_);
         
-        moneda1.appendChild(mensaje71_);
-    
-        var sumar1  = document.querySelector('.cober_suma1'); 
-        var mensaje81_ = document.createTextNode( values[1].suma);
+            var sumar1  = document.querySelector('.cober_suma1'); 
+            var mensaje81_ = document.createTextNode( values[1].suma);
+            
+            sumar1.appendChild(mensaje81_);
         
-        sumar1.appendChild(mensaje81_);
-    
-        var plaz1  = document.querySelector('.cober_fianza1'); 
-        var mensaje91_ = document.createTextNode( values[1].plazo);
+            var plaz1  = document.querySelector('.cober_fianza1'); 
+            var mensaje91_ = document.createTextNode( values[1].plazo);
+            
+            plaz1.appendChild(mensaje91_);
         
-        plaz1.appendChild(mensaje91_);
-     
-    
-        var ende1  = document.querySelector('.cober_vigencia1'); 
-        var mensaje111_ = document.createTextNode( values[1].vigencia_ini +" "+ values[1].vigencia_fin);
         
-        ende1.appendChild(mensaje111_);
-    
-    
-    
-    
-        console.log(values[2].plazo); 
-        var pol2  = document.querySelector('.cobertura_poliza2'); 
-        var mensaje2_ = document.createTextNode( values[2].eleccion);
-        
-        pol2.appendChild(mensaje2_);
-    
-        var moneda2  = document.querySelector('.cober_moneda2'); 
-        var mensaje72_ = document.createTextNode( values[2].especificacion);
-        
-        moneda2.appendChild(mensaje72_);
-    
-        var sumar2 = document.querySelector('.cober_suma2'); 
-        var mensaje82_ = document.createTextNode( values[2].suma);
-        
-        sumar2.appendChild(mensaje82_);
-    
-        var plaz2  = document.querySelector('.cober_fianza2'); 
-        var mensaje92_= document.createTextNode( values[2].plazo);
-        
-        plaz2.appendChild(mensaje92_);
-     
-    
-        var ende2  = document.querySelector('.cober_vigencia2'); 
-        var mensaje112_ = document.createTextNode( values[2].vigencia_ini +" "+ values[2].vigencia_fin);
-        
-        ende2.appendChild(mensaje112_);
+            var ende1  = document.querySelector('.cober_vigencia1'); 
+            var mensaje111_ = document.createTextNode( values[1].vigencia_ini +"-"+ values[1].vigencia_fin);
+            
+            ende1.appendChild(mensaje111_);   
         
     
-    
-        var pol3  = document.querySelector('.cobertura_poliza3'); 
-        var mensaje63_ = document.createTextNode( values[3].eleccion);
+
         
-        pol3.appendChild(mensaje63_);
-    
-        var moneda3 = document.querySelector('.cober_moneda3'); 
-        var mensaje73_ = document.createTextNode( values[3].especificacion);
+            
+            var pol2  = document.querySelector('.cobertura_poliza2'); 
+            var mensaje2_ = document.createTextNode( values[2].eleccion);
+            
+            pol2.appendChild(mensaje2_);
         
-        moneda3.appendChild(mensaje73_);
-    
-        var sumar3  = document.querySelector('.cober_suma3'); 
-        var mensaje83_ = document.createTextNode( values[3].suma);
+            var moneda2  = document.querySelector('.cober_moneda2'); 
+            var mensaje72_ = document.createTextNode( values[2].especificacion);
+            
+            moneda2.appendChild(mensaje72_);
         
-        sumar3.appendChild(mensaje83_);
-    
-        var plaz3  = document.querySelector('.cober_fianza3'); 
-        var mensaje93_ = document.createTextNode( values[3].plazo);
+            var sumar2 = document.querySelector('.cober_suma2'); 
+            var mensaje82_ = document.createTextNode( values[2].suma);
+            
+            sumar2.appendChild(mensaje82_);
         
-        plaz3.appendChild(mensaje93_);
-     
-    
-        var ende3  = document.querySelector('.cober_vigencia3'); 
-        var mensaje113_ = document.createTextNode( values[3].vigencia_ini +" "+ values[3].vigencia_fin);
+            var plaz2  = document.querySelector('.cober_fianza2'); 
+            var mensaje92_= document.createTextNode( values[2].plazo);
+            
+            plaz2.appendChild(mensaje92_);
+         
         
-        ende3.appendChild(mensaje113_);
+            var ende2  = document.querySelector('.cober_vigencia2'); 
+            var mensaje112_ = document.createTextNode( values[2].vigencia_ini +"-"+ values[2].vigencia_fin);
+            
+            ende2.appendChild(mensaje112_);
+                    
+            
+
+
+        
     
+            var pol3  = document.querySelector('.cobertura_poliza3'); 
+            var mensaje63_ = document.createTextNode( values[3].eleccion);
+            
+            pol3.appendChild(mensaje63_);
+        
+            var moneda3 = document.querySelector('.cober_moneda3'); 
+            var mensaje73_ = document.createTextNode( values[3].especificacion);
+            
+            moneda3.appendChild(mensaje73_);
+        
+            var sumar3  = document.querySelector('.cober_suma3'); 
+            var mensaje83_ = document.createTextNode( values[3].suma);
+            
+            sumar3.appendChild(mensaje83_);
+        
+            var plaz3  = document.querySelector('.cober_fianza3'); 
+            var mensaje93_ = document.createTextNode( values[3].plazo);
+            
+            plaz3.appendChild(mensaje93_);
+         
+        
+            var ende3  = document.querySelector('.cober_vigencia3'); 
+            var mensaje113_ = document.createTextNode( values[3].vigencia_ini +"-"+ values[3].vigencia_fin);
+            -
+            ende3.appendChild(mensaje113_);
+        
+        
+        
     
+
     
         var pol4  = document.querySelector('.cobertura_poliza4'); 
         var mensaje64_ = document.createTextNode( values[4].eleccion);
@@ -308,25 +306,22 @@
         
         plaz4.appendChild(mensaje94_);
      
-    
+ 
         var ende4  = document.querySelector('.cober_vigencia4'); 
-        var mensaje114_ = document.createTextNode( values[4].vigencia_ini +" "+ values[4].vigencia_fin);
+        var mensaje114_ = document.createTextNode( values[4].vigencia_ini +"-"+ values[4].vigencia_fin);
         
         ende4.appendChild(mensaje114_);
-             
-
-        document.querySelector("#print").addEventListener("click", function() {
-            window.print();
-        });
-
-       
+    
  
-    }
-     
+     }
+     document.querySelector("#print").addEventListener("click", function() {
+	 window.print();
 });
 
+});
+})();
 $(function(){
-
+         
     var fec=new Date; 
     var dia=fec.getDate(); 
     if (dia<10) dia='0'+dia; 
@@ -336,8 +331,9 @@ $(function(){
     var  fecha=dia+'/'+mes+'/'+anio;  
     console.log(fecha);
     $('#fecha_hoy').append(fecha); 
-    $('#fecha_hoy').append(fecha); 
+     
 
+    
     $(".boton_5").click(function(){ 
 
 
@@ -375,7 +371,7 @@ $(function(){
         var fila5="<tr> <td >"+txt+"</td><td >"+txt1+"</td><td >"+txt2+"</td><td >"+txt3+"</td><td >"+fechatotal1+"</td><td >"+fechatotal2+"</td><td >"+fechatotal3+"</td><td >"+txt7+"</td></tr>";
 
         $('.tfinal5').append(fila5);
-        console.log(fila5);
+        console.log(fila5); 
         return false;
     });
 
@@ -413,8 +409,7 @@ $(function(){
         var fila_eje="<tr> <td >"+txto+"</td><td >"+txto1+"</td><td >"+txto2+"</td><td >"+txto3+"</td><td >"+fechatotal4+"</td><td >"+fechatotal5+"</td><td >"+fechatotal6+"</td><td >"+txto7+"</td></tr>";
         
 
-        $('.tfinal_eje').append(fila_eje);
-        
+        $('.tfinal_eje').append(fila_eje); 
         return false;
     });
     $(".boton_18").click(function(){
@@ -453,12 +448,14 @@ $(function(){
 
          
         $('.tfinal18').append(fila18);
-        
         return false;
+        
+         
     });
+
+
+ 
 
 });
 
-})();
- 
      

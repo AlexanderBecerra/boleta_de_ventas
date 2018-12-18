@@ -55,7 +55,8 @@ body{
 }
 
 .caja_soc{
-    padding-left: 10%;
+    padding-left: 5%;
+    margin-right: 5%;
 }
 .piepagina .final{
     padding-left: 2%;
@@ -264,16 +265,16 @@ input[type="email"]{
 
 .firmas{
     margin-top: 35px;
+    padding: 0 15%;
 }
 
 .firma1{
-    float: left;
-    margin-left: 70px;
+    float: left; 
     text-align: center;
+     
 }
 .firma2{
-    float: right;
-    margin-right: 90px;
+    float: right; 
     text-align: center;
 
 }
@@ -391,10 +392,15 @@ input[disabled].boton_enviar {
     padding-left: 5%;
 }
 table.impresion{
-    margin: 3% 25%;
-    border: 1px solid black
+    margin: 3%   auto  3% 75px;
+    border: 1px solid black;
 } 
-
+.nuevo.celda{
+    padding: 0 0 0 5%;
+}
+.nuevo.celda .r { 
+    display: inline-block;
+}
 /**/ 
 /**/
 @media print {
@@ -404,21 +410,33 @@ table.impresion{
     #section-to-print, #section-to-print * {
       visibility: visible;
       color: white;
-      font-size: 0.8rem;
+      font-size: 0.02rem;
     }
     #section-to-print {
       position: absolute; 
-      top: 0;
-      left: 0;
+      top: 0!important;
+      left: 0!important;
       
-    }
-    
+    } 
     html, body {
             height:100vh; 
             margin: 0 !important; 
             padding: 0 !important;
             overflow: hidden;
     }  
+    #section-to-print .impresion .titulos{
+        font-size: 0.08rem!important;
+    }
+    #section-to-print .impresion{
+        border: none; 
+         
+    } 
+    .legales{
+        padding-left: 0;
+         margin: 0;
+        border:none;
+    }
+ 
     
   }
   .final{
@@ -470,5 +488,4 @@ table.impresion{
 }
 .print{
     page-break-after: avoid;
-
 }
